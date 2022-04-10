@@ -9,6 +9,7 @@ LABEL "repository"="https://github.com/grantmcconnaughey/lintly-flake8-github-ac
 LABEL "homepage"="https://github.com/grantmcconnaughey/lintly-flake8-github-actions"
 LABEL "maintainer"="Grant McConnaughey <grantmcconnaughey@gmail.com>"
 
+RUN apt-get install -y --no-install-recommends git
 RUN pip install --upgrade pip
 RUN pip install flake8 git+https://github.com/23andMe/lintly
 
