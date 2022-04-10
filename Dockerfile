@@ -10,8 +10,7 @@ LABEL "homepage"="https://github.com/grantmcconnaughey/lintly-flake8-github-acti
 LABEL "maintainer"="Grant McConnaughey <grantmcconnaughey@gmail.com>"
 
 RUN pip install --upgrade pip
-RUN pip install flake8
-RUN pip install lintly
+RUN pip install flake8 git+https://github.com/23andMe/lintly
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
