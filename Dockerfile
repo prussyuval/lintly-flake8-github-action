@@ -9,7 +9,7 @@ LABEL "repository"="https://github.com/grantmcconnaughey/lintly-flake8-github-ac
 LABEL "homepage"="https://github.com/grantmcconnaughey/lintly-flake8-github-actions"
 LABEL "maintainer"="Grant McConnaughey <grantmcconnaughey@gmail.com>"
 
-RUN apt-get update && apt-get install -y --no-install-recommends git && pip install --upgrade pip && pip install flake8 git+https://github.com/23andMe/lintly markupsafe==2.0.1
+RUN apt-get update && apt-get install -y --no-install-recommends git && pip install --upgrade pip && pip install flake8 git+https://github.com/prussyuval/lintly markupsafe==2.0.1
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
