@@ -14,9 +14,6 @@ inputs:
     description: Args to pass to the flake8 executable
     required: false
     default: "."
-  pr:
-    description: Pull request number
-    required: true
 
 runs:
   using: docker
